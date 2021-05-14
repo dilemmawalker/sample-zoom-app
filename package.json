@@ -1,0 +1,23 @@
+{
+  "name": "sample-app-zoom",
+  "version": "1.0.0",
+  "description": "Zoom offers a web based HTML5 client that is used in environments where the end users cannot download zoom desktop clients due to internal IT restrictions or in very low bandwidth environments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoom/sample-app-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zoom/sample-app-web/issues"
+  },
+  "homepage": "https://github.com/zoom/sample-app-web#readme",
+  "dependencies": {
+    "@zoomus/websdk": "^1.8.6",
+    "express": "^4.17.1"
+  }
+}
