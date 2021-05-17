@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Zoom WebSDK</title>
+    <title>Zoom join screen</title>
     <meta charset="utf-8" />
     <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.9.1/css/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.9.1/css/react-select.css" />
@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class = "flex-container">
     <style>
         .sdk-select {
             height: 34px;
@@ -26,13 +27,13 @@
             margin-bottom: 0px;
         }
 
-        #show-test-tool {
+        /* #show-test-tool {
             position: absolute;
             top: 100px;
             left: 0;
             display: block;
             z-index: 99999;
-        }
+        } */
 
         #display_name {
             width: 250px;
@@ -53,16 +54,17 @@
             margin: 0;
         }
     </style>
+    </div>
 
     <nav id="nav-tool" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">futuresoft</a>
+                <a class="navbar-brand" href="#">Meeting joining area</a>
             </div>
             <div id="navbar" class="websdktest">
                 <form class="navbar-form navbar-right" id="meeting_form">
                     <div class="form-group">
-                        <input type="text" name="display_name" id="display_name" value="1.9.1#CDN" maxLength="100"
+                        <input type="text" name="display_name" id="display_name" value="" maxLength="100"
                             placeholder="Name" class="form-control" required>
                     </div>
                     <div class="form-group">
@@ -106,7 +108,7 @@
                             <option value="vi-VN">Vietnamese Tiếng Việt</option>
                             <option value="it-IT">Italian italiano</option>
                         </select>
-                    </div>
+                    </div><br></br>
 
                     <input type="hidden" value="" id="copy_link_value" />
                     <button type="submit" class="btn btn-primary" id="join_meeting">Join</button>
